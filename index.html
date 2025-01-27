@@ -11,17 +11,12 @@
         <img src="images/logo.png" alt="Logo" class="logo">
         <h1>Brawl Pass Giveaway</h1>
 
-        <!-- Step 0: Get Key -->
-        <div id="step0" class="step">
-            <p>Click the button below to get your key:</p>
-            <button onclick="redirectToKey()">Get Key</button>
-        </div>
-
         <!-- Step 1: Enter Key -->
-        <div id="step1" class="step hidden">
+        <div id="step1" class="step">
             <p>Enter the 6-digit key to access the giveaway:</p>
             <input type="text" id="key" maxlength="6" placeholder="Enter 6-digit key" required>
             <button onclick="validateKey()">Next</button>
+            <p>Don’t have a key? <button onclick="openKeyLink()">Get Key</button></p>
         </div>
 
         <!-- Step 2: Enter Username -->
