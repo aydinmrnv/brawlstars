@@ -43,7 +43,7 @@ function selectPlatform(platform) {
 // Handle reward selection and redirect to Linkvertise
 function selectReward(reward) {
     console.log(`Reward selected: ${reward}`);
-    const rewardLinkvertise = "https://linkvertise.com/reward";
+    const rewardLinkvertise = "https://link-hub.net/1285193/brawl-stars-10-gems";
     window.open(rewardLinkvertise, "_blank");
 }
 
