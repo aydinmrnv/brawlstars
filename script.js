@@ -5,6 +5,9 @@ const validKeys = [
     "667788", "778899", "889900", "990011", "001122"
 ];
 
+// Store results in localStorage
+let results = JSON.parse(localStorage.getItem('giveawayResults')) || [];
+
 function validateKey() {
     const key = document.getElementById("key").value.trim();
     if (validKeys.includes(key)) {
@@ -25,11 +28,14 @@ function goToStep3() {
     document.getElementById("step3").classList.remove("hidden");
 }
 
-function selectPass(type) {
-    const linkvertiseUrl = "https://linkvertise.com";
-    if (type === "gold") {
-        window.location.href = `${linkvertiseUrl}/gold`;
-    } else if (type === "diamond") {
-        window.location.href = `${linkvertiseUrl}/diamond`;
-    }
+function selectReward(reward) {
+    const key = document.getElementById("key").value.trim();
+    const username = document.getElementById("username").value.trim();
+
+    // Save the result
+    results.push({ key, username, reward });
+    localStorage.setItem('giveawayResults', JSON.stringify(results));
+
+    // Redirect to results page
+    window.location.href = "results.html";
 }
