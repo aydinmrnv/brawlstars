@@ -54,6 +54,10 @@ button:hover {
     margin-top: 20px;
 }
 
+.platform-options button {
+    margin: 5px;
+}
+
 .option {
     text-align: center;
     margin: 10px;
@@ -71,3 +75,4 @@ button:hover {
 .option:hover img {
     border-color: #007bff;
 }
+
