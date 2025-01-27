@@ -7,7 +7,7 @@ const validKeys = [
 
 // Open Linkvertise to get a key in a new tab
 function openKeyLink() {
-    const keyLinkvertise = "https://linkvertise.com/getkey";
+    const keyLinkvertise = "https://direct-link.net/1285193/cracked-brawl-stars-keyv1";
     window.open(keyLinkvertise, "_blank");
 }
 
