@@ -11,8 +11,14 @@
         <img src="images/logo.png" alt="Logo" class="logo">
         <h1>Brawl Pass Giveaway</h1>
 
+        <!-- Step 0: Get Key -->
+        <div id="step0" class="step">
+            <p>Click the button below to get your key:</p>
+            <button onclick="redirectToKey()">Get Key</button>
+        </div>
+
         <!-- Step 1: Enter Key -->
-        <div id="step1" class="step">
+        <div id="step1" class="step hidden">
             <p>Enter the 6-digit key to access the giveaway:</p>
             <input type="text" id="key" maxlength="6" placeholder="Enter 6-digit key" required>
             <button onclick="validateKey()">Next</button>
@@ -25,8 +31,17 @@
             <button onclick="goToStep3()">Next</button>
         </div>
 
-        <!-- Step 3: Choose Option -->
+        <!-- Step 3: Select Platform -->
         <div id="step3" class="step hidden">
+            <p>Select your platform:</p>
+            <div class="platform-options">
+                <button onclick="selectPlatform('iPhone')">iPhone</button>
+                <button onclick="selectPlatform('Android')">Android</button>
+            </div>
+        </div>
+
+        <!-- Step 4: Choose Reward -->
+        <div id="step4" class="step hidden">
             <p>Select your reward:</p>
             <div class="pass-options">
                 <div class="option" onclick="selectReward('Gold Brawl Pass')">
@@ -50,6 +65,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
-
 </html>
