@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Pass Giveaway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Brawl Pass Giveaway</h1>
+        
+        <!-- Step 1: Enter Key -->
+        <div id="step1" class="step">
+            <p>Enter the 6-digit key to access the giveaway:</p>
+            <input type="text" id="key" maxlength="6" placeholder="Enter 6-digit key" required>
+            <button onclick="validateKey()">Next</button>
+        </div>
+        
+        <!-- Step 2: Enter Username -->
+        <div id="step2" class="step hidden">
+            <p>Enter your Supercell ID username:</p>
+            <input type="text" id="username" placeholder="Enter your Supercell ID" required>
+            <button onclick="goToStep3()">Next</button>
+        </div>
+        
+        <!-- Step 3: Choose Brawl Pass -->
+        <div id="step3" class="step hidden">
+            <p>Select the Brawl Pass you want:</p>
+            <div class="pass-options">
+                <div class="option" onclick="selectPass('gold')">
+                    <img src="images/gold_brawl_pass.png" alt="Gold Brawl Pass">
+                    <p>Gold Brawl Pass</p>
+                </div>
+                <div class="option" onclick="selectPass('diamond')">
+                    <img src="images/diamond_brawl_pass.png" alt="Diamond Brawl Pass">
+                    <p>Diamond Brawl Pass</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
